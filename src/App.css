@@ -1,0 +1,606 @@
+/* ------------------------------- AppNavBar Style ----------------------------------*/
+.navbar {
+    background-color: #141414 !important;
+  }
+  
+  .navbar-brand {
+    color: #E50914 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .nav-link {
+    color: #FFFFFF !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-right: 1rem;
+  }
+  
+  .nav-link:hover {
+    color: #E50914 !important;
+  }
+  
+  .navbar .btn-link {
+    color: #E50914 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* =============================================== AddMovie Style -----------------------------------------------*?
+
+  /* AddMovie.css */
+
+.add-movie-container {
+    background-color: #141414;
+    min-height: 100vh;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  .add-movie-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
+  h2 {
+    color: #e50914;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  form .form-label {
+    font-weight: bold;
+  }
+  
+  button {
+    background-color: #e50914;
+    border: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff1d1d;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ----------------------------------------------- Home Style -------------------------------------------*/
+
+  /* Home.css */
+
+.home-container {
+    background-color: #141414;
+    min-height: 100vh;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #e50914;
+    margin-bottom: 2rem;
+  }
+  
+  .movie-card {
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .movie-card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .movie-card-body {
+    padding: 1rem;
+  }
+  
+  .movie-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .movie-details {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .movie-details-btn {
+    background-color: #e50914;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  .movie-details-btn:hover {
+    background-color: #ff1d1d;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .pagination-btn {
+    width: 45%;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .no-movies-text {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-title {
+      font-size: 2.5rem;
+    }
+  
+    .movie-card {
+      margin-bottom: 1.5rem;
+    }
+  
+    .pagination-btn {
+      width: 48%;
+      font-size: 1rem;
+    }
+  }
+  
+  /* -------------------------------------------------------------DeleteMovie Style --------------------------------*/
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff3b30;
+    margin-bottom: 2rem;
+  }
+  
+  /* Table Styling */
+  .movie-table {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .movie-table th, .movie-table td {
+    color: #ddd;
+  }
+  
+  .movie-table th {
+    background-color: #333;
+  }
+  
+  .movie-table tr:hover {
+    background-color: #444;
+  }
+  
+  /* Button Styling */
+  .delete-btn {
+    background-color: #ff3b30;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e03228;
+  }
+  
+  .delete-btn:focus {
+    box-shadow: none;
+  }
+  
+  /* Alert Styling */
+  .alert {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .movie-table {
+      font-size: 0.9rem;
+    }
+  
+    .delete-btn {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  /* ---------------------------------------------------------------- EditMovie Style --------------------------------------------------------- */
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 2rem;
+  }
+  
+  /* Form Styling */
+  .movie-form {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-form .form-control {
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-form .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  }
+  
+  .movie-form .form-label {
+    font-weight: bold;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Alert Styling */
+  .alert {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .movie-form {
+      padding: 1.5rem;
+    }
+  
+    .submit-btn, .delete-btn {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  /* ----------------------------------------------------------MovieDetails ---------------------------------------------------*/
+
+/* Global Styles */
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    color: #333; /* Dark text for better contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for Movie details */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Movie Card Styling */
+  .movie-card {
+    background: #ffffff; /* Soft white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .movie-card .card-title {
+    font-size: 2rem;
+    color: #2c3e50; /* Darker text for the title */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .movie-details {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #34495e; /* Softer, dark gray for text */
+  }
+  
+  .movie-details strong {
+    color: #2980b9; /* Highlight important information */
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Slight color change on hover */
+    color: white;
+  }
+  
+  .btn-action {
+    background-color: #3498db; /* Soft blue for primary actions */
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .btn-action:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Comment Section Styles */
+  .comments-heading {
+    color: #E8E8E8; /* Softer gray for headings */
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .comment-list {
+    background: #ecf0f1; /* Light gray background for comments */
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .comment-item {
+    background: #ffffff;
+    color: #34495e;
+    border-left: 4px solid #3498db; /* Blue accent for comments */
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  .comment-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Input fields */
+  .comment-input {
+    background: #ecf0f1;
+    color: #333;
+    border: 2px solid #3498db; /* Blue border for inputs */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .comment-input:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Focus effect */
+  }
+
+form .form-label {
+    font-weight: bold;
+    color: #E8E8E8;
+}
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .movie-card {
+      padding: 20px;
+    }
+  
+    .movie-details {
+      font-size: 1rem; /* Smaller text on small screens */
+    }
+  
+    .comments-heading {
+      font-size: 1.4rem;
+    }
+  
+    .comment-item {
+      font-size: 1rem; /* Smaller comment font on small screens */
+    }
+  }
+  
+  /* ------------------------------------------------ Register Style ---------------------------------------------------*/
+
+  /* Background with a Netflix vibe */
+.register-page {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Card styling */
+  .register-card {
+    background: #141414;
+    border: none;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Input field styling */
+  .input-field {
+    background: #333;
+    border: 1px solid #444;
+    color: #fff;
+  }
+  
+  .input-field:focus {
+    background: #444;
+    border-color: #e50914;
+    color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.5);
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #e50914;
+    border: none;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #f40612;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 576px) {
+    .register-card {
+      padding: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  /* ---------------------------------------------------------Login Style -----------------------------------------------------------------------*/
+
+  /* Background with a Netflix vibe */
+.login-page {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Card styling */
+  .login-card {
+    background: #141414;
+    border: none;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Input field styling */
+  .input-field {
+    background: #333;
+    border: 1px solid #444;
+    color: #fff;
+  }
+  
+  .input-field:focus {
+    background: #444;
+    border-color: #e50914;
+    color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(229, 9, 20, 0.5);
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #e50914;
+    border: none;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #f40612;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 576px) {
+    .login-card {
+      padding: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  form .form-label {
+    font-weight: bold;
+    color: #360303;
+}
